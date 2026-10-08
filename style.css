@@ -1,0 +1,125 @@
+/* Page Background */
+body {
+  font-family: "Kalam", cursive, sans-serif;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Blackboard Container */
+.chalkboard {
+  background: rgba(43, 58, 47, 0.94);
+  padding: 35px 45px;
+  border-radius: 12px;
+  border: 20px solid #5c3a21;
+  box-shadow:
+    inset 0 0 35px rgba(0, 0, 0, 0.9),
+    0 20px 40px rgba(0, 0, 0, 0.7);
+  width: 90vw;
+  max-width: 950px;
+  backdrop-filter: blur(2px);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 3.5rem;
+  color: #ffffff;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  letter-spacing: 2px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 35px;
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+.chalk-line {
+  border: none;
+  border-top: 3px dashed rgba(255, 255, 255, 0.4);
+  margin: 20px 0;
+}
+
+.control-group {
+  margin: 14px 0;
+  display: flex;
+  gap: 15px;
+}
+
+/* Input Fields */
+input {
+  flex: 1;
+  padding: 10px 16px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: "Kalam", cursive;
+  font-size: 1.3rem;
+  outline: none;
+}
+
+input::placeholder {
+  color: #cccccc;
+}
+
+/* Chalk Buttons */
+button {
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.25);
+  color: #ffeb3b;
+  border: 3px solid #ffeb3b;
+  border-radius: 8px;
+  font-family: "Kalam", cursive;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #ffeb3b;
+  color: #2b3a2f;
+}
+
+button.btn-warning {
+  color: #ff8a80;
+  border-color: #ff8a80;
+}
+
+button.btn-warning:hover {
+  background: #ff8a80;
+  color: #2b3a2f;
+}
+
+/* Output Box */
+.output-box {
+  background: rgba(0, 0, 0, 0.35);
+  border: 2px dashed #80deea;
+  padding: 16px 20px;
+  border-radius: 8px;
+  min-height: 35px;
+  font-size: 1.45rem;
+  color: #80deea;
+  word-break: break-word;
+}
